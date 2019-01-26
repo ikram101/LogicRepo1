@@ -7,7 +7,12 @@ namespace Logical
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            
+
+
+            string strReverse = StringOperation.ReverseArray01("Hello");
+            ;
+
         }
     }
 }
