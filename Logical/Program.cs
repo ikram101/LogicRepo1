@@ -7,12 +7,16 @@ namespace Logical
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            
 
 
-            string strReverse = StringOperation.ReverseArray01("Hello");
+            string str11 = "134";
+
+            string sst = StringOperation.PadString(str11,'0',2);
+
+            string dd = str11;
+ 
+
             ;
-
         }
     }
 }
