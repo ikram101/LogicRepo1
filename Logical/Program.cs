@@ -6,14 +6,13 @@ namespace Logical
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
 
 
-            string str11 = "134";
 
-            string sst = StringOperation.PadString(str11,'0',2);
+            string[] temp = { "Hi", "", "Syed", "", "", "701" };
 
-            string dd = str11;
+            string [] sst = StringOperation.RemoveBlankspaces(temp);
+             
  
 
             ;

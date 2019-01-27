@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace Logical
@@ -65,46 +66,42 @@ namespace Logical
             return strInput;
         }
 
-        // Calculate Employee Age
-
-        public static DateTime Age(DateTime dob)
-        {
-            return dob;
-        }
-
-
-        public static void IsStringRefType(string str)
-        {
-            str = "I am modified in a method;";
-        }
-
-        //write a program that accept a string with two  3 or 4 char and return 4 char
-        // if parm is 123 return 0123
-
-        public string ParametersCheck(string st)
-        {
-            return "";
-
-        }
-
 
         // you have an array of string move blanc spaces from a string array to the right without any third variable
 
         // [2][3][][][d][][][][55]
         // [][][][][][2][3][5]
 
-        public string[] RemoveBlanSpaces(string[] strInput)
+        public static string[] RemoveBlankspaces(string[] strArr)
         {
             string[] temp = { "Hi", "", "Syed", "", "", "701" };
 
-            Array.
+            Array.Sort(strArr);
+
+            return strArr;
 
 
-
-
-
-            return strInput;
         }
+
+        // Return Collection from a method
+
+        public static Employee GetCollVal(string strDifinition = "EmployeeID=102,EmplyeeName=SYED")
+        {
+            Employee emp = new Employee();
+
+           // Foo json = JsonConvert.DeserializeObject<Foo>(str)
+
+
+
+            string value = "5.5";
+            PropertyInfo propertyInfo = emp.GetType().GetProperty("Latitude");
+            propertyInfo.SetValue(emp, value, null);
+
+            return emp;
+        }
+
+
+        //Reflection string path= Home.Address.PostalCode  return postalcode value
 
 
 
@@ -165,6 +162,21 @@ namespace Logical
             {
                 Console.WriteLine(item);
             }
+        }
+    }
+
+
+
+    public class Employee
+    {
+        public int EmployeeID { get; set; }
+        public string EmpName { get; set; }
+
+        public int GetAge
+        {
+
+            get { return 12; }
+
         }
     }
 
