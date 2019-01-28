@@ -49,7 +49,7 @@ namespace Logical
 
         }
 
-        //Pad string with leading zero
+        //Lef Pad string with leading zero
 
         public static string PadString(string strInput, char padChar, int noOfStuff)
         {
@@ -68,7 +68,7 @@ namespace Logical
         }
 
 
-        // you have an array of string move blanc spaces from a string array to the right without any third variable
+        //Move blank spaces to the front 
 
         // [2][3][][][d][][][][55]
         // [][][][][][2][3][5]
@@ -82,7 +82,7 @@ namespace Logical
             return strArr;
         }
 
-        // Return Collection from a method
+        // Reflection 
 
         public static Employee GetColl(string str = "EmployeeID=102,EmpName=SYED")
         {
@@ -117,7 +117,14 @@ namespace Logical
 
         }
 
-        public void ReflectionDemo()
+
+        public void ArrayInilizationSamples()
+        {
+
+        }
+
+        //Reflection sample   
+        public void ReflectionSamples()
 
         { 
             Employee emp = new Employee();
@@ -126,6 +133,8 @@ namespace Logical
 
            // PropertyInfo propertyInfo = emp.GetType().GetProperty();
         }
+
+
 
         // Find most repeated char in a string
 
