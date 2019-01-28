@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
@@ -79,23 +80,31 @@ namespace Logical
             Array.Sort(strArr);
 
             return strArr;
-
-
         }
 
         // Return Collection from a method
 
-        public static Employee GetCollVal(string strDifinition = "EmployeeID=102,EmplyeeName=SYED")
+        public static Employee GetColl(string str = "EmployeeID=102,EmpName=SYED")
         {
             Employee emp = new Employee();
 
-           // Foo json = JsonConvert.DeserializeObject<Foo>(str)
+            string[] inputFields = str.Split(",".ToCharArray());
 
 
+            foreach (string field in inputFields)
+            {
 
-            string value = "5.5";
-            PropertyInfo propertyInfo = emp.GetType().GetProperty("Latitude");
-            propertyInfo.SetValue(emp, value, null);
+                string fieldName = field.Substring(0, field.IndexOf("="));
+
+                string fv = field.Substring(field.IndexOf("=") + 1);
+
+                PropertyInfo propertyInfo = emp.GetType().GetProperty(fieldName);
+
+                var fv1 = Convert.ChangeType(fv, propertyInfo.PropertyType);
+
+                propertyInfo.SetValue(emp, fv, null);
+
+            }
 
             return emp;
         }
@@ -103,8 +112,20 @@ namespace Logical
 
         //Reflection string path= Home.Address.PostalCode  return postalcode value
 
+        public static void GetPostalCode(string path = "Home.Address.PostalCode")
+        {
 
+        }
 
+        public void ReflectionDemo()
+
+        { 
+            Employee emp = new Employee();
+
+            MethodInfo[] methods = typeof(Program).GetMethods();
+
+           // PropertyInfo propertyInfo = emp.GetType().GetProperty();
+        }
 
         // Find most repeated char in a string
 

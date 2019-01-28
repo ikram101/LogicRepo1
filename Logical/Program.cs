@@ -8,10 +8,13 @@ namespace Logical
         {
 
 
+            Employee emp = new Employee();
+
+            var emp2 = StringOperation.GetColl();
 
             string[] temp = { "Hi", "", "Syed", "", "", "701" };
 
-            string [] sst = StringOperation.RemoveBlankspaces(temp);
+            var sst = StringOperation.GetColl();
              
  
 
