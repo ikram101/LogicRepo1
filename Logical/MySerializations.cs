@@ -6,5 +6,6 @@ namespace Logical
 {
     public class MySerializations
     {
+
     }
 }
