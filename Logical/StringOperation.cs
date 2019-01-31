@@ -114,6 +114,8 @@ namespace Logical
 
         public static void GetPostalCode(string path = "Home.Address.PostalCode")
         {
+            //Get postal code value using reflection
+
 
         }
 
@@ -126,12 +128,21 @@ namespace Logical
         //Reflection sample   
         public void ReflectionSamples()
 
-        { 
+        {
             Employee emp = new Employee();
 
-            MethodInfo[] methods = typeof(Program).GetMethods();
+            Type type = typeof(Employee);
 
-           // PropertyInfo propertyInfo = emp.GetType().GetProperty();
+            PropertyInfo[] prop = type.GetProperties();
+
+            MethodInfo[] methods = type.GetMethods();
+
+            //ConstructorInfo[] constructor = type.GetConstructor();\
+
+            //FieldInfo[] fields = type.GetField("Hello"); ;
+
+
+            // PropertyInfo propertyInfo = emp.GetType().GetProperty();
         }
 
 
@@ -210,6 +221,7 @@ namespace Logical
         }
     }
 
+     
 
 }
 

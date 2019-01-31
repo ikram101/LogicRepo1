@@ -7,16 +7,10 @@ namespace Logical
         static void Main(string[] args)
         {
 
-
-            Employee emp = new Employee();
-
-            var emp2 = StringOperation.GetColl();
-
-            string[] temp = { "Hi", "", "Syed", "", "", "701" };
-
-            var sst = StringOperation.GetColl();
              
- 
+
+            var array = myArray.myDuplicate();
+
 
             ;
         }
