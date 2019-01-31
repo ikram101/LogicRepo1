@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Logical.Classes
+namespace Logical
 {
 
     public class Employee
