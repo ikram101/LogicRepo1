@@ -7,8 +7,6 @@ namespace Logical
         static void Main(string[] args)
         {
 
-
-
             var array = MyDates.GetAge();
 
             ;
