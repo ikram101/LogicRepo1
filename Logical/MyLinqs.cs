@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Logical
 {
-    public static class MyLinqQueries
+    public static class MyLinqs
     {
     }
 }
