@@ -96,6 +96,9 @@ namespace Logical
 
         public static int[] FindGreaterNumber()
         {
+            int[] array1 = { 4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
+
+
 
             return new int[3];
         }

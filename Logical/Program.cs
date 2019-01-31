@@ -7,10 +7,9 @@ namespace Logical
         static void Main(string[] args)
         {
 
-             
 
-            var array = myArray.myDuplicate();
 
+            var array = MyDates.GetAge();
 
             ;
         }
