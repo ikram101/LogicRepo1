@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Logical
 {
-    public class StringOperation
+    public class MyStrings
     {
 
 
