@@ -37,11 +37,11 @@ namespace Logical
 
             int[] array1 = { 4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
 
-             
+
 
             for (int i = 0; i < array1.Length; i++)
             {
-                for (int j = i + 1; j < (array1.Length-1); j++)
+                for (int j = i + 1; j < (array1.Length - 1); j++)
                 {
                     if (array1[j] < array1[i])
                     {
@@ -52,7 +52,7 @@ namespace Logical
                 }
             }
 
-           var xx= array1;
+            var xx = array1;
 
             return array1;
         }
@@ -94,23 +94,48 @@ namespace Logical
 
         // Find greatest number in an array
 
-        public static int[] FindGreaterNumber()
+        public static int[] FindGreaterOrSmallarNumber() 
         {
-            int[] array1 = { 4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
+            int[] array1 = { 4, 2, 3, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
+
+            for (int a = 0; a < array1.Length; a++)
+            {
+                for (int b = a + 1; b < array1.Length ; b++)
+                {
+                    if (array1[b] < array1[a])
+                    {
+                        int temp = array1[a];
+                        array1[a] = array1[b];
+                        array1[b] = temp;
+                    }
+                }
+            }
+
+            int gr = array1[array1.Length - 1];
+
+            int greaterNum = array1.ToList().Max(n => n);
 
 
-
-            return new int[3];
+            return array1;
         }
 
-       
+
 
         // Factoreal
 
-        public static int[] FindFactoreal()
+        public static int FindFactoreal()
         {
+            int number = 4;  // 4*3*2*1
 
-            return new int[3];
+            int fact = 1;
+
+            for (int a = number; a >= 1; a--)
+            {
+                fact = fact * a;    //4*3
+            }
+
+
+            return fact;
         }
 
         // exponent
