@@ -7,7 +7,7 @@ namespace Logical
         static void Main(string[] args)
         {
 
-            var array = myArray.FindGreaterNumber();
+            var array = myArray.FindExponent();
 
             ;
         }

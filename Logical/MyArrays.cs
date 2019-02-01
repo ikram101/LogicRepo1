@@ -13,7 +13,6 @@ namespace Logical
         {
             int[] array1 = { 4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
 
-
             int len = array1.Length - 1;
             int[] temp = new int[len + 1];
 
@@ -36,7 +35,6 @@ namespace Logical
         {
 
             int[] array1 = { 4, 4, 2, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
-
 
 
             for (int i = 0; i < array1.Length; i++)
@@ -141,6 +139,17 @@ namespace Logical
         // exponent
         public static int[] FindExponent()
         {
+
+            //8^2= 8*8
+            //8^3 =8*8*8
+
+            int number = 8;
+            int exp = 3;
+            int result = 1;
+            for (int a=1;a<=exp;a++)
+            {
+                result = result * number;
+            }
 
             return new int[3];
         }
