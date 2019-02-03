@@ -42,7 +42,7 @@ namespace Logical.Pholymarphism
 
         public void test()
         {
-            carObj.
+             
         }
 
         
