@@ -37,8 +37,6 @@ namespace Logical.Entities
     }
 
 
-
-
     public class Test
     {
         BMW bmw = new BMW();
