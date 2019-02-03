@@ -9,16 +9,7 @@ namespace Logical
         {
 
 
-            for (int a=1;a<=100;a++)
-            {
-
-                bool prime = myArray.IsPrimeNumber(a);
-                if(prime)
-                {
-                    Console.Write("Prime: ");
-                    Console.WriteLine(a);
-                }
-            }
+            var num= myArray.ReverseNumber(12345);
 
 
             Console.ReadKey();

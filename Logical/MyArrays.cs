@@ -188,6 +188,36 @@ namespace Logical
         }
 
 
+        public static int ReverseNumber(int num)
+        {
+            //12345
+
+            string str= num.ToString();
+
+            char[] charTemp = new char[str.Length];
+
+            int frd = 0;
+
+            for (int  a=str.Length-1;a>=0;a--)
+            {
+                charTemp[frd++] = str[a];
+            }
+
+            string str1 = new string(charTemp);
+                
+            bool revNum1 = int.TryParse(str1, out int revNum);
+
+            return revNum;
+        }
 
     }
 }
+
+        // Create char[] from string
+        // char[] charTemp = new char[str.Length];
+
+        // Convert string to Char[] array
+        // char[] charArr= str.toCharArray()
+
+        // Char to string
+        // string str1 = new string(charArr);

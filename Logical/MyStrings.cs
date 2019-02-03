@@ -17,7 +17,7 @@ namespace Logical
             string strTemp = string.Empty;
             int forward = 0;
 
-            char[] chArray = strInput.ToCharArray();
+            char[] chArray = new char[strInput.Length];
 
             for (int a = strInput.Length - 1; a >= 0; a--)
             {
