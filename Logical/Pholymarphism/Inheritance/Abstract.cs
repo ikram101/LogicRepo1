@@ -11,7 +11,6 @@ namespace Logical
         public string EmpName { get; set; }
 
         public abstract DateTime DOB { get; set; }
-
         public abstract void DoWork(int i);
 
 
