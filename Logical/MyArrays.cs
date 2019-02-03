@@ -155,9 +155,38 @@ namespace Logical
         }
 
 
-        // Yeild
-        //IEnumrable
-        //
+        // Most difficult
+        public static bool IsPrimeNumber(int number)
+        {
+            // 1,2,3,5,7,11,13,17,19,21
+            // A number is prime if its devisible by 1 and itself
+            if(number==1)
+            {
+                return false;
+            }
+
+            if(number==2)
+            {
+                return true;
+            }
+                 
+            if(number>0)
+            {
+
+                for (int a=number-1; a>1;a--)
+                {
+                    if( number%a==0 )
+                    {
+                        return false;
+                    }
+                }
+            }
+
+
+
+            return true;
+        }
+
 
 
     }

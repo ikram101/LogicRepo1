@@ -7,17 +7,23 @@ namespace Logical
     {
         static void Main(string[] args)
         {
-            IEnumerable<string> m_oEnum = new string[] {"AA","B","C","B","B","F" };
-             
 
-            List<string> m_oEnum2 =new List<string>();
-            foreach (var x in MyGenerics.FindBobs1(m_oEnum))
+
+            for (int a=1;a<=100;a++)
             {
-                m_oEnum2.Add(x);
-            }
-             
 
-            ;
+                bool prime = myArray.IsPrimeNumber(a);
+                if(prime)
+                {
+                    Console.Write("Prime: ");
+                    Console.WriteLine(a);
+                }
+            }
+
+
+            Console.ReadKey();
+
+
         }
     }
 }
