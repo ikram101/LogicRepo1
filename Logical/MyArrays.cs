@@ -77,7 +77,7 @@ namespace Logical
 
 
             //List duplicate items
-            array2.Sort();
+
 
             foreach (int i in array2)
             {
@@ -92,13 +92,13 @@ namespace Logical
 
         // Find greatest number in an array
 
-        public static int[] FindGreaterOrSmallarNumber() 
+        public static int[] FindGreaterOrSmallarNumber()
         {
             int[] array1 = { 4, 2, 3, 2, 2, 2, 3, 3, 1, 1, 6, 7, 5 };
 
             for (int a = 0; a < array1.Length; a++)
             {
-                for (int b = a + 1; b < array1.Length ; b++)
+                for (int b = a + 1; b < array1.Length; b++)
                 {
                     if (array1[b] < array1[a])
                     {
@@ -146,7 +146,7 @@ namespace Logical
             int number = 8;
             int exp = 3;
             int result = 1;
-            for (int a=1;a<=exp;a++)
+            for (int a = 1; a <= exp; a++)
             {
                 result = result * number;
             }
@@ -160,22 +160,22 @@ namespace Logical
         {
             // 1,2,3,5,7,11,13,17,19,21
             // A number is prime if its devisible by 1 and itself
-            if(number==1)
+            if (number == 1)
             {
                 return false;
             }
 
-            if(number==2)
+            if (number == 2)
             {
                 return true;
             }
-                 
-            if(number>0)
+
+            if (number > 0)
             {
 
-                for (int a=number-1; a>1;a--)
+                for (int a = number - 1; a > 1; a--)
                 {
-                    if( number%a==0 )
+                    if (number % a == 0)
                     {
                         return false;
                     }
@@ -192,32 +192,54 @@ namespace Logical
         {
             //12345
 
-            string str= num.ToString();
+            string str = num.ToString();
 
             char[] charTemp = new char[str.Length];
 
             int frd = 0;
 
-            for (int  a=str.Length-1;a>=0;a--)
+            for (int a = str.Length - 1; a >= 0; a--)
             {
                 charTemp[frd++] = str[a];
             }
 
             string str1 = new string(charTemp);
-                
+
             bool revNum1 = int.TryParse(str1, out int revNum);
 
             return revNum;
         }
 
+
+        public static void Fibonacci()
+        {
+            //0,1,1,2,3,5,8,13..
+
+            List<int> fabList = new List<int>();
+
+            int prv = -1, next = 1;
+
+            for (int a = 0; a < 20; a++)
+            {
+                int sum = prv + next;
+                Console.WriteLine(sum);
+
+                prv = next;
+                next = sum;
+
+            }
+
+             
+        }
+
     }
 }
 
-        // Create char[] from string
-        // char[] charTemp = new char[str.Length];
+// Create char[] from string
+// char[] charTemp = new char[str.Length];
 
-        // Convert string to Char[] array
-        // char[] charArr= str.toCharArray()
+// Convert string to Char[] array
+// char[] charArr= str.toCharArray()
 
-        // Char to string
-        // string str1 = new string(charArr);
+// Char to string
+// string str1 = new string(charArr);

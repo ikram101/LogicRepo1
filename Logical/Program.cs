@@ -8,8 +8,11 @@ namespace Logical
         static void Main(string[] args)
         {
 
-
-            var num= myArray.ReverseNumber(12345);
+            
+          
+                myArray.Fibonacci();
+           
+           
 
 
             Console.ReadKey();
