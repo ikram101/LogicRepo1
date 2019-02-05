@@ -229,10 +229,45 @@ namespace Logical
 
             }
 
-             
+
+        }
+
+
+        public static int BinarySearch()
+        {
+            int key = 7;
+
+            int[] arry = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            int min = 0;
+            int max = arry.Length - 1;
+
+            while (min <= max)
+            {
+                int MidPoint = (min + max) / 2;
+
+                if (key == arry[MidPoint])
+                {
+                    return key;
+                }
+                else if (arry[MidPoint] > key)
+                {
+                    max = MidPoint - 1;
+                }
+                else
+                {
+                    min = MidPoint+1;
+                }
+
+            }
+
+            return 0;
+
         }
 
     }
+
+
 }
 
 // Create char[] from string

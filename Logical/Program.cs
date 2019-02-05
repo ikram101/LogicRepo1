@@ -8,12 +8,7 @@ namespace Logical
         static void Main(string[] args)
         {
 
-            
-          
-                myArray.Fibonacci();
-           
-           
-
+            myArray.BinarySearch();
 
             Console.ReadKey();
 
