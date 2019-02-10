@@ -72,9 +72,7 @@ namespace Logical
                         array2.Add(array1[i]);
                     }
                 }
-
             }
-
 
             //List duplicate items
 
@@ -228,19 +226,12 @@ namespace Logical
                 next = sum;
 
             }
-
-
         }
 
 
-        public static int BinarySearch()
+        public static string BinarySearch()
         {
-            int key = 7;
-
-            int[] arry = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
-            int min = 0;
-            int max = arry.Length - 1;
+           1;
 
             while (min <= max)
             {
@@ -248,20 +239,28 @@ namespace Logical
 
                 if (key == arry[MidPoint])
                 {
+                    int abc = 10; string key = "G";
+
+            //int[] arry = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            string[] arry = { "A", "B", "C", "D", "E", "F", "G", "H", "I" };
+
+            int min = 0;
+            int max = arry.Length - 
                     return key;
                 }
-                else if (arry[MidPoint] > key)
+                else if (string.Compare(arry[MidPoint], key, false) > 0)
                 {
                     max = MidPoint - 1;
                 }
                 else
                 {
-                    min = MidPoint+1;
+                    abc=
+                    min = MidPoint + 1;
                 }
-
             }
 
-            return 0;
+            return "Nothing";
 
         }
 
