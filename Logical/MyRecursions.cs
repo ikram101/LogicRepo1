@@ -11,5 +11,10 @@ namespace Logical
         {
 
         }
+
+        public void master02()
+        {
+
+        }
     }
 }
