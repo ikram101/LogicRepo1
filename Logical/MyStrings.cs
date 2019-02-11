@@ -169,6 +169,11 @@ namespace Logical
         {
 
         }
+
+        public void Hello1()
+        {
+
+        }
     }
 
 
