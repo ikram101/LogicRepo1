@@ -167,7 +167,7 @@ namespace Logical
 
         public void Hello()
         {
-
+            // Hello
         }
 
         public void Hello1()
