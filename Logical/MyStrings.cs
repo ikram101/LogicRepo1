@@ -9,6 +9,8 @@ namespace Logical
     public class MyStrings
     {
 
+        //Feb-24-2019: LogicalAppRep02 commit 01
+
 
         // Reverse string
 
@@ -177,6 +179,7 @@ namespace Logical
         }
     }
 
+    //Weclome1
 
      
 
