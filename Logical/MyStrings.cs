@@ -9,8 +9,12 @@ namespace Logical
     public class MyStrings
     {
 
-        //Feb-24-2019: LogicalAppRep02 commit 01
 
+        
+        //Feb-24-2019: Fixbug01 commit 01
+
+         
+         // Hello this is my 2nd change 
 
         // Reverse string
 
