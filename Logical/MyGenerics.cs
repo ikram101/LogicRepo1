@@ -30,3 +30,5 @@ namespace Logical
         }
     }
 }
+
+// Changes in Local LogicalAppRep02 branch

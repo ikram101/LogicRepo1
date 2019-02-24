@@ -163,8 +163,20 @@ namespace Logical
                 Console.WriteLine(item);
             }
         }
+
+
+        public void Hello()
+        {
+            //Hello Jee
+        }
+
+        public void Hello1()
+        {
+
+        }
     }
 
+    //Weclome1
 
      
 
