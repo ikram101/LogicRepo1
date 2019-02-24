@@ -9,9 +9,9 @@ namespace Logical
     public class MyStrings
     {
 
-        //Feb-24-2019: LogicalAppRep02 commit 01
 
-
+        
+        //Feb-24-2019: Fixbug01 commit 01
         // Reverse string
 
         public static string ReverseArray01(string strInput)
