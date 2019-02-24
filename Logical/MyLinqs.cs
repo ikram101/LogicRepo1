@@ -6,6 +6,9 @@ namespace Logical
 {
     public static class MyLinqs
     {
+        //my commit 02; Before Pull request
+
+        //my commit 03: Before Pull request
 
     }
 }
