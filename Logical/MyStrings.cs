@@ -12,6 +12,10 @@ namespace Logical
 
         
         //Feb-24-2019: Fixbug01 commit 01
+
+         
+         // Hello this is my 2nd change 
+
         // Reverse string
 
         public static string ReverseArray01(string strInput)
